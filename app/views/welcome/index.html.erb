@@ -118,6 +118,11 @@
 
 
         <!--Start of slider section-->
+        <script>
+$(function(){
+  $('#myCarousel').carousel();
+});
+</script>
         <section id="slider">
             <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
                 <!-- Indicators -->
@@ -131,40 +136,7 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <div class="slider_overlay">
-                            <img src="/images/img1.jpg" alt="..."> 
-                            <h1 class="animated infinite bounce delay-2s">Example</h1>
-                            .yourElement {
-                                animation-duration: 3s;
-                                animation-delay: 2s;
-                                animation-iteration-count: infinite;
-                                 }
-                                 const element =  document.querySelector('.my-element')
-                                 element.classList.add('animated', 'bounceOutLeft')
-                                 const element =  document.querySelector('.my-element')
-element.classList.add('animated', 'bounceOutLeft')
-
-element.addEventListener('animationend', function() { doSomething() })
-function animateCSS(element, animationName, callback) {
-    const node = document.querySelector(element)
-    node.classList.add('animated', animationName)
-
-    function handleAnimationEnd() {
-        node.classList.remove('animated', animationName)
-        node.removeEventListener('animationend', handleAnimationEnd)
-
-        if (typeof callback === 'function') callback()
-    }
-
-    node.addEventListener('animationend', handleAnimationEnd)
-}
-animateCSS('.my-element', 'bounce')
-
-// or
-animateCSS('.my-element', 'bounce', function() {
-  // Do something after animation
-})
-<div class="animated bounce delay-2s">Example</div>
-<div class="animated bounce faster">Example</div>
+                        <img src='food3.jpg'> to <%= image_tag 'food3.jpg' %> 
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Protect</h3>
@@ -178,7 +150,7 @@ animateCSS('.my-element', 'bounce', function() {
                     <!--End of item With Active-->
                     <div class="item">
                         <div class="slider_overlay">
-                            <img src="images/img2.jpg" alt="...">
+                        <img src='food3.jpg'> to <%= image_tag 'food3.jpg' %>
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Protect</h3>
@@ -192,7 +164,7 @@ animateCSS('.my-element', 'bounce', function() {
                     <!--End of Item-->
                     <div class="item">
                         <div class="slider_overlay">
-                            <img src="/images/img3.jpg" alt="...">
+                        <img src='food2.jpg'> to <%= image_tag 'food2.jpg' %>
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Protect</h3>
@@ -205,7 +177,10 @@ animateCSS('.my-element', 'bounce', function() {
                     </div>
                     <!--End of item-->
                 </div>
+               
                 <!--End of Carousel Inner-->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
             </div>
         </section>
         <!--end of slider section-->
@@ -621,6 +596,7 @@ animateCSS('.my-element', 'bounce', function() {
                                         <ol class="carousel-indicators">
                                             <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
                                             <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                                            <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
                                         </ol>
                                         <!-- Carousel items -->
                                         <div class="carousel-inner">

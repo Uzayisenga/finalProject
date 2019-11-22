@@ -1,0 +1,52 @@
+<%= form_with(model: docteur, local: true) do |form| %>
+  <% if docteur.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(docteur.errors.count, "error") %> prohibited this docteur from being saved:</h2>
+
+      <ul>
+        <% docteur.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :names %>
+    <%= form.text_field :names %>
+  </div>
+
+  <div class="field">
+    <%= form.label :field_in %>
+    <%= form.text_field :field_in %>
+  </div>
+
+  <div class="field">
+    <%= form.label :upload_cv %>
+    <%= form.text_area :upload_cv %>
+  </div>
+
+  <div class="field">
+    <%= form.label :upload_diploma %>
+    <%= form.text_area :upload_diploma %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :availability %>
+    <%= form.text_field :availability %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telephone %>
+    <%= form.text_field :telephone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

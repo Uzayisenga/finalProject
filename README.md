@@ -38,7 +38,9 @@ https://docs.google.com/document/d/1LeDt2UIK8gcMLHxaXVG0XqX5ckK2LQaeOILuiIcwNHw/
 
 Erd flowchat
 
-https://drive.google.com/file/d/1eADqQAaGoiujK-A-NQs0--YthGLvlkNK/view?usp=sharing
+https://drive.google.com/file/d/1FUiDs9tsDqChPfTvhE-Agp13RJ-Z2-zu/view?usp=sharing
+
+https://drive.google.com/file/d/1BtXQxLtqwZh7_tv7dk27W80hc4PUKIqm/view?usp=sharing
 
 Scheduled use Gem
 carrierwave

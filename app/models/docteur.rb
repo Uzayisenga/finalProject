@@ -1,0 +1,2 @@
+class Docteur < ApplicationRecord
+end

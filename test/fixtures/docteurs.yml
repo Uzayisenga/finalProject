@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  names: MyString
+  field_in: MyString
+  upload_cv: MyText
+  upload_diploma: MyText
+  email: MyString
+  availability: MyString
+  telephone: MyString
+
+two:
+  names: MyString
+  field_in: MyString
+  upload_cv: MyText
+  upload_diploma: MyText
+  email: MyString
+  availability: MyString
+  telephone: MyString

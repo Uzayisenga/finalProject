@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Names:</strong>
+  <%= @docteur.names %>
+</p>
+
+<p>
+  <strong>Field in:</strong>
+  <%= @docteur.field_in %>
+</p>
+
+<p>
+  <strong>Upload cv:</strong>
+  <%= @docteur.upload_cv %>
+</p>
+
+<p>
+  <strong>Upload diploma:</strong>
+  <%= @docteur.upload_diploma %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @docteur.email %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @docteur.availability %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @docteur.telephone %>
+</p>
+
+<%= link_to 'Edit', edit_docteur_path(@docteur) %> |
+<%= link_to 'Back', docteurs_path %>
