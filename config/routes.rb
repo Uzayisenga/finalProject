@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  resources :videos
+  get 'publisher/create'
+  get 'publisher/store'
+  resources :get_free_consultants
+  resources :publishers
+  resources :questions
+  resources :advices
   resources :docteurs
   get 'welcome/index'
   root 'welcome#index'

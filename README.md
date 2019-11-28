@@ -25,7 +25,7 @@ Functions list
  Give testimonial this will be appering to the website and encourage the people to be motivated.
  
 Catalog design
-https://docs.google.com/spreadsheets/d/19JDuEKszhFoQ5cIPLheZXjbxPOt6kZphIP__IBbmW7E/edit?usp=sharing
+https://docs.google.com/document/d/1XVIUb3_IflOioE372fMagZVqg_5EKvxgVUUIVNLlRJw/edit?usp=sharing
 
 table definition
 https://docs.google.com/document/d/19Sr_rz0hUMl17ygpKqurRNur0HmN4zIof15iF77ex3c/edit?usp=sharing
@@ -40,13 +40,14 @@ Erd flowchat
 
 https://drive.google.com/file/d/1FUiDs9tsDqChPfTvhE-Agp13RJ-Z2-zu/view?usp=sharing
 
-https://drive.google.com/file/d/1BtXQxLtqwZh7_tv7dk27W80hc4PUKIqm/view?usp=sharing
-
 Scheduled use Gem
 carrierwave
+paperclip
 mini_magick
 devise
 English Ver
+
+
 README
 Doctors in Nutrition
 Overview

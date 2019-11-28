@@ -1,39 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Docteurs</h1>
+<h1> Welcome to Docteurs Page</h1><br><br>
 
-<table>
-  <thead>
-    <tr>
-      <th>Names</th>
-      <th>Field in</th>
-      <th>Upload cv</th>
-      <th>Upload diploma</th>
-      <th>Email</th>
-      <th>Availability</th>
-      <th>Telephone</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @docteurs.each do |docteur| %>
-      <tr>
-        <td><%= docteur.names %></td>
-        <td><%= docteur.field_in %></td>
-        <td><%= docteur.upload_cv %></td>
-        <td><%= docteur.upload_diploma %></td>
-        <td><%= docteur.email %></td>
-        <td><%= docteur.availability %></td>
-        <td><%= docteur.telephone %></td>
-        <td><%= link_to 'Show', docteur %></td>
-        <td><%= link_to 'Edit', edit_docteur_path(docteur) %></td>
-        <td><%= link_to 'Destroy', docteur, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+<% @docteurs.each do |docteur| %>
+  <div class="row">
+  <div class = "col-sm-4">
+  <% if docteur.image.present? %>
+  <%= image_tag docteur.image , class:'image'%>
+  <% end %>
+  <div class="card-body mt-3"
+  <h1><%= docteur.names %></h1>
+  <p>
+  <%= docteur.telephone %><br>
+  <%= docteur.email %><br>
+  <%= docteur.availability %>
+  </p>
+  </div
+  <p class="card-footer">
+  <%= link_to 'Back', docteurs_path, class:'btn btn-dark' %></p>
+</div>
+<% end %>
+</div>
+</div>
 <%= link_to 'New Docteur', new_docteur_path %>
+

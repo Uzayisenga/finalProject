@@ -1,4 +1,4 @@
-<%= form_with(model: docteur, local: true) do |form| %>
+<%= form_with(model: docteur, local: true, html: { multipart: true } ) do |form| %>
   <% if docteur.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(docteur.errors.count, "error") %> prohibited this docteur from being saved:</h2>
@@ -22,13 +22,18 @@
   </div>
 
   <div class="field">
+  <%= form.label :image %>
+  <%= form.file_field :image %>
+</div>
+
+  <div class="field">
     <%= form.label :upload_cv %>
-    <%= form.text_area :upload_cv %>
+    <%= form.file_field :upload_cv %>
   </div>
 
   <div class="field">
     <%= form.label :upload_diploma %>
-    <%= form.text_area :upload_diploma %>
+    <%= form.file_field :upload_diploma %>
   </div>
 
   <div class="field">
