@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
+  
   resources :videos
   get 'publisher/create'
   get 'publisher/store'
   resources :get_free_consultants
-  resources :publishers
+  resources :publishers do
+    resources :comments
+  end
   resources :questions
   resources :advices
   resources :docteurs

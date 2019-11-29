@@ -10,8 +10,10 @@ class PublishersController < ApplicationController
   # GET /publishers/1
   # GET /publishers/1.json
   def show
+    @comments = @publisher.comments
+    @comment = @publisher.comments.build
   end
-
+  
   # GET /publishers/new
   def new
     @publisher = Publisher.new
