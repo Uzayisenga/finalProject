@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-
-  
+ devise_for :users
   resources :videos
+  get 'videos/show'
+  get '/videos/:id', to: 'posts#show'
   get 'publisher/create'
   get 'publisher/store'
   resources :get_free_consultants

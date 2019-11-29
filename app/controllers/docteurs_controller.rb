@@ -1,5 +1,7 @@
 class DocteursController < ApplicationController
   before_action :set_docteur, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  protect_from_forgery with: :exception
 
   # GET /docteurs
   # GET /docteurs.json

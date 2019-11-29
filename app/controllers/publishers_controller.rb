@@ -1,5 +1,7 @@
 class PublishersController < ApplicationController
   before_action :set_publisher, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  protect_from_forgery with: :exception
 
   # GET /publishers
   # GET /publishers.json
