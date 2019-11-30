@@ -127,15 +127,6 @@ html {
 body {
 }
 
-/*Remove chrome Input Field’s Unwanted Yellow Background Color*/
-
-input: -webkit-autofill,
-input: -webkit-autofill:hover,
-input: -webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 100px white inset !important;
-}
-
-/*Input focus color removed*/
 
 :focus {
     outline: -webkit-focus-ring-color auto 0px;
